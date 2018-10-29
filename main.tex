@@ -1,14 +1,103 @@
-\documentclass{article}
+% !TEX encoding = UTF-8 Unicode
+%%
+%% This is file `squelette-rr.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% RR.dtx  (with options: `sample')
+%% ********************************************************************
+%% Copyright (C) 1997-1999 2004 2006-2011 INRIA/APICS/MARELLE by Jose' Grimm
+%% This file may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%% An archive of the software can be found at
+%%    ftp://ftp-sop.inria.fr/marelle/RR-INRIA
+
+\documentclass[twoside]{article}
+\usepackage[a4paper]{geometry}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % ou \usepackage[OT1]{fontenc}
+\usepackage{RR}
+\usepackage{hyperref}
+\usepackage{amsmath}
 
-\title{pyamg-tr}
-\author{victorien.menier }
-\date{October 2018}
+\usepackage{graphicx}
+\usepackage{caption}
 
+\DeclareUnicodeCharacter{00A0}{ }
+
+%\include{journal.sty}
+
+%%\usepackage[frenchb]{babel} % optionnel
+\RRNo{000}
+%% \RTNo{0703}
+%%
+%% date de publication du rapport
+\RRdate{October 2018}
+%%
+%% Cas d'une version deux
+%% \RRversion{2}
+%% date de publication de la version 2
+%% \RRdater{November 2008}
+%%
+\RRauthor{Victorien Menier and Adrien Loseille}
+%% Ceci apparait sur chaque page paire.
+\authorhead{Menier}
+%% titre francais long
+\RRtitle{pyAMG: a mesh adaptation suite for multiscale problems and complex geometries}
+%% English title
+\RRetitle{pyAMG: a mesh adaptation suite for multiscale problems and complex geometries}
+%%
+\titlehead{pyAMG: a mesh adaptation suite for multiscale problems and complex geometries}
+%%
+\RRnote{Contact: victorien.menier@inria.fr}
+\RRnote{}
+%%
+\RRresume{}
+\RRabstract{}
+%%
+\RRmotcle{}
+\RRkeyword{}
+
+%% \RRprojet{Apics}  % cas d'un seul projet
+\RRprojet{GAMMA3}
+
+%% \URLorraine % pour ceux qui sont \`a l'est
+%% \URRennes  % pour ceux qui sont \`a l'ouest
+%% \URRhoneAlpes % pour ceux qui sont dans les montagnes
+%% \URRocq % pour ceux qui sont au centre de la France
+%% \URFuturs % pour ceux qui sont dans le virtuel
+%% \URSophia % pour ceux qui sont au Sud.
+%%
+%% \RCBordeaux % centre de recherche Bordeaux - Sud Ouest
+%% \RCLille % centre de recherche Lille Nord Europe
+%% \RCParis % Paris Rocquencourt
+ \RCSaclay % Saclay \^Ile de France
+%% \RCGrenoble % Grenoble - Rh\^one-Alpes
+%% \RCNancy % Nancy - Grand Est
+%% \RCRennes % Rennes - Bretagne Atlantique
+%\RCSophia % Sophia Antipolis M\'editerran\'ee
+
+%%
 \begin{document}
+%%
+\makeRR   % cas d'un rapport de recherche
+%% \makeRT % cas d'un rapport technique.
+%% a partir d'ici, chacun fait comme il le souhaite
 
-\maketitle
+\tableofcontents
+\newpage
 
-\section{Introduction}
+
+ \bibliographystyle{plain}
+ \bibliography{bibtex}
 
 \end{document}
+\endinput
+%%
+%% End of file `squelette-rr.tex'.
